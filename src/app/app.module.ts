@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ChooseHeroComponent } from './choose-hero/choose-hero.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChooseHeroComponent
   ],
   imports: [
     BrowserModule
