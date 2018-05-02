@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>
+    Você escolheu {{ hero.name }}!
+  </h1>
+  <div class="row">
+    <div class="col-lg-4 hidden-xs hidden-md hidden-sm col">
+      <div class="shadow-lg p-3 bg-white rounded container-image">
+        <img [src]="hero.image" width="220" height="334" />
+      </div>
+    </div>
+    <div class="col-lg-7 col">
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <div class="form-group">
+          <label for="name">Seu Nome</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name" required minlength="10" #name="ngModel">
+        </div>
+        <div class="form-group">
+          <label for="email">Seu E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="model.email" required email #name="ngModel">
+        </div>
+        <div class="form-group">
+          <label for="source">Como você conheceu os Vingadores?</label>
+          <select class="form-control" id="source" name="source" [(ngModel)]="model.source" required>
+            <option *ngFor="let source of sources" [value]="source.value">{{ source.name }}</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-dark">Confirmar</button>
+      </form>
+    </div>
+  </div>
+  <div class="text-center buttons-bottom">
+    <a routerLink="/home">
+      <i class="fa fa-home"></i>
+    </a>
+  </div>
+</div>

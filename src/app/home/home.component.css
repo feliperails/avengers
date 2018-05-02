@@ -1,0 +1,23 @@
+.container{
+  height: 100vh;
+}
+.container-logo{
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo{
+  display: block;
+  max-width: 100%;
+  padding: 1rem;
+}
+.buttons-bottom{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons-bottom .fa{
+  font-size: 3rem;
+}

@@ -1,0 +1,11 @@
+.container{
+  width: 220px;
+  box-sizing: content-box;
+  padding: 0 1rem;
+  text-align: center;
+  margin: auto;
+}
+.title{
+  font-size: 1.3rem;
+  font-family: TwCenMT-Regular;
+}

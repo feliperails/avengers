@@ -1,3 +1,16 @@
-<p>
-  choose-hero works!
-</p>
+<h1>
+  Escolha seu vingador!
+</h1>
+<div class="container-items">
+  <div class="row">
+    <div *ngFor="let hero of heroes" class="col-xs-12 col-sm-6 col-lg-4 container-hero">
+      <app-hero-item [hero]="hero"></app-hero-item>
+    </div>
+  </div>
+</div>
+<div class="text-center buttons-bottom  ">
+  <div>
+    <i class="fa fa-chevron-circle-down"></i>
+    <i class="fa fa-chevron-circle-up"></i>
+  </div>
+</div>

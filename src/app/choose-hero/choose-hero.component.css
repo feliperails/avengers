@@ -1,0 +1,44 @@
+.container-hero{
+  display: flex;
+  height: calc(100vh - 220px);
+  min-height: 437px;
+  padding: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+h1{
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  font-size: 4rem;
+  font-family: TwCenMT-Regular;
+  text-align: center;
+  background: #000;
+  color: #FFF;
+  height: 120px;
+  padding: 20px;
+}
+.buttons-bottom{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+.buttons-bottom .fa{
+  font-size: 2rem;
+}
+.container-items{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #fafafa;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}

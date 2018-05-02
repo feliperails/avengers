@@ -19,6 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../packages-download/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css",
+        "../packages-download/TwCenMT-Regular/styles.css",
         "styles.css"
       ],
       "scripts": [],
